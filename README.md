@@ -1,4 +1,4 @@
-# Manual de API para `digicert`
+# Manual de API  `Prueba`
 
 Este documento describe cómo interactuar con la API de **Prueba** usando diferentes endpoints categorizados bajo `category` y `product`. Todos los ejemplos aquí descritos se basan en una configuración de servidor local (`localhost:8080`) y la API sigue el formato JSON.
 
@@ -31,7 +31,7 @@ Este endpoint permite crear una nueva categoría.
     "name": "utiles",
     "description": ""
 }
-
+```
 ### 2. Actualizar Categoría (`PUT /api/category`)
 
 Este endpoint permite actualizar una categoría existente.
@@ -46,7 +46,7 @@ Este endpoint permite actualizar una categoría existente.
     "name": "juguetes",
     "description": "para menores"
 }
-
+```
 ### 3. Eliminar Categoría (`DELETE /api/category/{id}`)
 
 Este endpoint elimina una categoría por su `id` de forma lógica.
@@ -58,9 +58,9 @@ Este endpoint elimina una categoría por su `id` de forma lógica.
 
 ```bash
 curl -X DELETE http://localhost:8080/api/category/2
+```
 
-
-###4. Obtener Categoría por ID (GET /api/category/{id})
+### 4. Obtener Categoría por ID (GET /api/category/{id})
 
 Este endpoint devuelve los detalles de una categoría específica mediante su id.
 
@@ -71,14 +71,16 @@ Este endpoint devuelve los detalles de una categoría específica mediante su id
 
 ```bash
 curl -X GET http://localhost:8080/api/category/1
+
+```
 ```json
 {
     "id": 1,
     "name": "juguetes",
     "description": "para menores"
 }
-
-###5. Buscar Categorías (GET /api/category/search?q={query})
+```
+### 5. Buscar Categorías (GET /api/category/search?q={query})
 
 Este endpoint permite buscar categorías, puede o no enviar el query param.
 
@@ -89,7 +91,7 @@ Este endpoint permite buscar categorías, puede o no enviar el query param.
 
 ```bash
 curl -X GET http://localhost:8080/api/category/search?q=hola
-
+```
 ---
 
 ## Endpoints de `Product`
@@ -110,7 +112,7 @@ Este endpoint permite crear un nuevo producto.
     "quantity": 6,
     "categoryId": 1
 }
-
+```
 ### 2. Actualizar Producto (`PUT /api/product`)
 
 Este endpoint permite actualizar un producto existente.
@@ -127,7 +129,7 @@ Este endpoint permite actualizar un producto existente.
     "quantity": 10,
     "categoryId": 1
 }
-
+```
 ### 3. Eliminar Producto (`DELETE /api/product/{id}`)
 
 Este endpoint elimina un producto por su `id` de forma lógica.
@@ -139,8 +141,8 @@ Este endpoint elimina un producto por su `id` de forma lógica.
 
 ```bash
 curl -X DELETE http://localhost:8080/api/product/2
-
-###4. Obtener Producto por ID (GET /api/product/{id})
+```
+### 4. Obtener Producto por ID (GET /api/product/{id})
 
 Este endpoint devuelve los detalles de un producto específica mediante su id.
 
@@ -151,7 +153,7 @@ Este endpoint devuelve los detalles de un producto específica mediante su id.
 
 ```bash
 curl -X GET http://localhost:8080/api/product/2
-
+```
 ```json
 {
     "id": 2,
@@ -164,9 +166,9 @@ curl -X GET http://localhost:8080/api/product/2
         "description": ""
     }
 }
+```
 
-
-###5. Buscar Productos (GET /api/product/search?q={query})
+### 5. Buscar Productos (GET /api/product/search?q={query})
 
 Este endpoint permite buscar productos, puede o no enviar el query param.
 
@@ -177,3 +179,5 @@ Este endpoint permite buscar productos, puede o no enviar el query param.
 
 ```bash
 curl -X GET http://localhost:8080/api/product/search?q=hola
+
+```
