@@ -178,6 +178,87 @@ Este endpoint permite buscar productos, puede o no enviar el query param.
 ###Ejemplo de uso:
 
 ```bash
-curl -X GET http://localhost:8080/api/product/search?q=hola
+curl -X GET http://localhost:8080/api/product/search?q=juguetes
 
+```
+```json
+[
+    {
+        "id": 8,
+        "name": "camion X5sss1",
+        "description": "",
+        "quantity": 6.0,
+        "category": {
+            "id": 1,
+            "name": "juguetes",
+            "description": ""
+        }
+    },
+    {
+        "id": 6,
+        "name": "camion X5sss0",
+        "description": "",
+        "quantity": 6.0,
+        "category": {
+            "id": 1,
+            "name": "juguetes",
+            "description": ""
+        }
+    },
+    {
+        "id": 5,
+        "name": "camion X5sss0",
+        "description": "",
+        "quantity": 6.0,
+        "category": {
+            "id": 1,
+            "name": "juguetes",
+            "description": ""
+        }
+    },
+    {
+        "id": 4,
+        "name": "camion X5sss0",
+        "description": "",
+        "quantity": 6.0,
+        "category": {
+            "id": 1,
+            "name": "juguetes",
+            "description": ""
+        }
+    },
+    {
+        "id": 3,
+        "name": "camion X5sss0",
+        "description": "",
+        "quantity": 6.0,
+        "category": {
+            "id": 1,
+            "name": "juguetes",
+            "description": ""
+        }
+    },
+    {
+        "id": 2,
+        "name": "camion X5sss0",
+        "description": "",
+        "quantity": 6.0,
+        "category": {
+            "id": 1,
+            "name": "juguetes",
+            "description": ""
+        }
+    },
+    {
+        "id": 1,
+        "name": "camion X5sss0",
+        "description": "",
+        "quantity": 6.0,
+        "category": {
+            "id": 1,
+            "name": "juguetes",
+            "description": ""
+        }
+    }
+]
 ```
