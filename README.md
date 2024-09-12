@@ -6,9 +6,9 @@ Este documento describe cómo interactuar con la API de **Prueba** usando difere
 
 - **Base URL:** `http://localhost:8080`
 
-El proyecto esta en Sprint boot java 17 , es necesario tener una base de datos con el nombre **pruebadb** , verifiacr los datos de conexión en **application.properties**
+El proyecto esta en Sprint boot java 18  , es necesario tener una base de datos con el nombre de **pruebadb** , verificar los datos de conexión en el archivo **application.properties**
 
-Run: Una vez que se tenga todo listo se ejecuta el archivo **PruebaApplication**
+Run: Una vez que se tenga todo listo, se ejecuta el archivo **PruebaApplication**
 
 Herramientas utilizadas:
 
