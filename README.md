@@ -87,7 +87,7 @@ Este endpoint permite buscar categorías, puede o no enviar el query param.
 - **Método:** `GET`
 - **URL:** `http://localhost:8080/api/category/search`
 
-###Ejemplo de uso:
+### Ejemplo de uso:
 
 ```bash
 curl -X GET http://localhost:8080/api/category/search?q=hola
@@ -175,7 +175,7 @@ Este endpoint permite buscar productos, puede o no enviar el query param.
 - **Método:** `GET`
 - **URL:** `http://localhost:8080/api/product/search`
 
-###Ejemplo de uso:
+### Ejemplo de uso:
 
 ```bash
 curl -X GET http://localhost:8080/api/product/search?q=juguetes
