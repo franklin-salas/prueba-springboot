@@ -12,7 +12,7 @@ Run: Una vez que se tenga todo listo, se ejecuta el archivo **PruebaApplication*
 
 Herramientas utilizadas:
 
-Postman | Laragon - MySQl | IntelliJ IDEA Community Edition
+Postman | Laragon - MySQL | IntelliJ IDEA Community Edition
 ---
 
 ## Endpoints de `Category`
